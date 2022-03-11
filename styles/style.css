@@ -18,7 +18,9 @@ body, h1, h2, h3, p {
 div, ul, li {
  border: red 1px solid;
 }
-
+section {
+  border: royalblue 1px solid;
+}
 .link {
   text-decoration: none;
   color:  #2f80ed;
@@ -71,6 +73,7 @@ z-index: 100;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  margin: 0;
 }
 
 .header__main-illustration {
@@ -111,18 +114,15 @@ height: 100%;
 
 .two-columns__brief {
   width: 175px;
+}
+
+.two-columns__brief_text {
+  margin: 0;
+  font-weight: normal;
   font-size: 18px;
   line-height: 1.2;
   color:#2f80ed;
-  padding:0;
-  
 }
-
-.two-columns__brief__text {
-  margin: 0;
-}
-
-/*ПОЧЕМУ-ТО ТУТ ТЕКСТ ПЕРЕНОСИТСЯ ИНАЧЕ ЧЕМ В БРИФЕ*/
 
 .two-columns__main-text {
   width: 80%;
@@ -141,9 +141,6 @@ height: 100%;
   padding:0;
 }
 
-/*А ЗДЕСЬ ТЕКСТ ОТСТУПАЕТ ОТ ВЕРХА ЯЧЕЙКИ...*/
-
-
 .two-columns__span-accent {
   font-weight: bold;
 }
@@ -154,12 +151,12 @@ height: 100%;
 }
 
 .digits {
- padding: 
+ margin: 100px 0; 
 }
 
 .section-title {
   width: 60%;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
 /* ВОЗМОЖНО НАДО В СЕКЦИИ ПАДДИНГИ А НЕ ТУТ МАРЖИН */
 }
@@ -167,6 +164,7 @@ height: 100%;
 line-height: 1.15;
 font-size: 60px;
 font-weight: bold;
+margin: 0;
 
 }
 
@@ -176,23 +174,46 @@ font-weight: bold;
   text-align: center;
 }
 
+.section-subtitle_text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0}
+  
+
 .table {
   display: flex;
   width: 1100px;
   margin: auto;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style-type: none;
+  padding:0;
 }
 
 .table__cell {
   width: 250px;
   margin-top: 60px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
 }
 
 
 .table__heading {
-
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0}
 }
+
+.table__paragraph {
+  margin-bottom: 20px;
+}
+
+.table__paragraph:last-of-type {
+  margin-bottom: 0;
+} 
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -200,4 +221,63 @@ font-weight: bold;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.feynman {
+  height: 890px;
+  background-color:  #f2f2f2;
+  position: relative;
+  padding: 0;
+  display: flex;
+}
+
+.feynman__main-illustration {
+ position: absolute;
+ bottom:0;
+ left:0;
+ z-index: 0;
+  }
+
+
+.feynman__title {
+margin: 100px auto 0;
+width: 648px;
+text-align: center;
+z-index: 90;
+position: ;
+}
+
+.feynman__title_text {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin:0;
+  
+}
+
+.feynman__subtitle {
+  margin: 70px auto 0;
+  text-align: center;
+  position: relative;
+  } 
+
+  .feynman__subtitle_text {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin:0;
+  }
+
+  .feynman__main-illustration__pic {
+    width: 867px;
+    height: 637px;
+  }
+
+.feynman__link {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
 }
