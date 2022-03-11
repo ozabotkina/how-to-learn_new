@@ -9,17 +9,189 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+body, h1, h2, h3, p {
+  color: #000000
+  margin: 0;
+  padding: 0;
+}
+
+div, ul, li {
+ border: red 1px solid;
+}
+
+.link {
+  text-decoration: none;
+  color:  #2f80ed;
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+  }
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+}
+
+.logo__place_header {
+position: absolute;
+top: 30px;
+left: 64px;
+z-index: 100;
+}
+
+.header__title {
+ width: 730px;
+ margin: auto;
+ margin-left: 64px;
+ z-index: 90;
+}
+
+.header__title__text {
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 100;
+  }
+
+.header__subtitle__text {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.header__main-illustration {
+width: 765px;
+height: 608px; 
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: 1;
+}
+
+.header__main-illustration__pic {
+width: 100%;
+height: 100%;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+}
+
+
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+  /* ТУТ КАК_ТО ОТЦЕНТРОВАТЬ ФЛЕКСОМ НАДО */
+  justify-content: space-between;
+  padding: 0;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  color:#2f80ed;
+  padding:0;
+  
+}
+
+.two-columns__brief__text {
+  margin: 0;
+}
+
+/*ПОЧЕМУ-ТО ТУТ ТЕКСТ ПЕРЕНОСИТСЯ ИНАЧЕ ЧЕМ В БРИФЕ*/
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.two-columns__paragraph {
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  padding:0;
+}
+
+/*А ЗДЕСЬ ТЕКСТ ОТСТУПАЕТ ОТ ВЕРХА ЯЧЕЙКИ...*/
+
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.two-columns__paragraph:last-of-type 
+{
+  margin-bottom: 0px;
+}
+
+.digits {
+ padding: 
+}
+
+.section-title {
+  width: 60%;
+  margin: 100px auto 0 auto;
+  text-align: center;
+/* ВОЗМОЖНО НАДО В СЕКЦИИ ПАДДИНГИ А НЕ ТУТ МАРЖИН */
+}
+.section-title_text {
+line-height: 1.15;
+font-size: 60px;
+font-weight: bold;
+
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.table {
+  display: flex;
+  width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+
+.table__heading {
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
