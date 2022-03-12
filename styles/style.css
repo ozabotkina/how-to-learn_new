@@ -75,7 +75,7 @@ z-index: 100;
 
 .header__main-illustration {
 width: 765px;
-height: 608px; 
+height: 608px;
 position: absolute;
 bottom: 0;
 right: 0;
@@ -177,7 +177,8 @@ margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0}
+  margin: 0;
+}
   
 
 .table {
@@ -222,6 +223,8 @@ margin: 0;
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .feynman__main-illustration {
@@ -230,6 +233,7 @@ margin: 0;
  left:0;
  z-index: 0;
  margin:0;
+ 
   }
 
 
@@ -238,6 +242,7 @@ margin: 100px auto 0;
 width: 648px;
 text-align: center;
 z-index: 90;
+
 
 }
 
@@ -253,6 +258,7 @@ z-index: 90;
   margin: 70px auto 0;
   text-align: center;
   position: relative;
+  
   } 
 
   .feynman__subtitle_text {
