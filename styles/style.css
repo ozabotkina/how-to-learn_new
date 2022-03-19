@@ -9,16 +9,11 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-body, h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
-}
-
 .content {
   margin: 0;
 }
 
-.link {
+.header__link {
   text-decoration: none;
   color:  #2f80ed;
 }
@@ -77,6 +72,7 @@ body, h1, h2, h3, p {
   bottom: 0;
   right: 0;
   z-index: 1;
+  object-fit: cover;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -129,6 +125,7 @@ body, h1, h2, h3, p {
   line-height: 34px;
   font-weight: normal;
   padding:0;
+  margin-top: 0;
 }
 
 .two-columns__span-accent {
@@ -192,11 +189,11 @@ body, h1, h2, h3, p {
   margin: 0 0 20px 0;
 }
 
-.table__paragraph {
+.table__text {
   margin-bottom: 20px;
 }
 
-.table__paragraph:last-of-type {
+.table__text:last-of-type {
   margin-bottom: 0;
 } 
 
@@ -248,10 +245,11 @@ body, h1, h2, h3, p {
   position: absolute;
   right: 40px;
   top: 50%;
-  color: #000000;
+  color:  #2f80ed;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -284,13 +282,15 @@ body, h1, h2, h3, p {
   color: white;
 }
 
-.table__paragraph_theme_dark {
+.table__text_theme_dark {
   color: white;
 }
 
 .kaufman__triangle {
   width:877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
   top:0;
   right: -210px;
@@ -361,6 +361,7 @@ body, h1, h2, h3, p {
   font-size: 18px;
   font-weight: normal;
   color: white;
+  text-decoration: none;
 }
 
 .footer__social-icon {
